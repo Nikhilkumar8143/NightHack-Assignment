@@ -1,6 +1,6 @@
 import React,{useState, useContext } from 'react';
 import { AuthContext } from "../App";
-import { Redirect } from "react-router-dom";
+import { Redirect } from "react-router-dom"
 
 const UserRepos = (props) => {
 	const { state } = useContext(AuthContext);
