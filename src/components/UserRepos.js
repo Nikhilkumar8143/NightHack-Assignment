@@ -9,7 +9,6 @@ const UserRepos = (props) => {
 	const [ inputValue,setInputValue ] = useState("")
 	
 	if(state.isLoggedIn && repoData.length <= 0){
-		console.log(state.user)
 		fetch(state.user.repos_url,{
 			method:"GET"
 		}).then(data => data.json()).then(data => {
@@ -22,7 +21,6 @@ const UserRepos = (props) => {
 		let h = []
 		repoData.filter(data => {
 			if(data.name.toLowerCase().indexOf(e.target.value) >=0) {
-				console.log(data)
 				h.push(data)
 			}
 			setFilteredData(h)

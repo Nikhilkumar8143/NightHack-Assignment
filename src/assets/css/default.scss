@@ -112,8 +112,16 @@ img {
     font-weight: 300;
 }
 
+.w-50{
+    width: 50%;
+}
+
 @media screen and (max-width: 1000px) {
     .desktop-pad{
         padding: 40px 26px;
+    }
+
+    .w-50{
+        width: 100%;
     }
 }

@@ -18,14 +18,6 @@ export const reducer = (state, action) => {
         user: action.payload.user
       };
     }
-    case "LOGOUT": {
-      localStorage.clear()
-      return {
-        ...state,
-        isLoggedIn: action.payload.isLoggedIn,
-        user: action.payload.user
-      };
-    }
     default:
       return state;
   }

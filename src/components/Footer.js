@@ -20,7 +20,7 @@ const Footer = (props) => {
                     <p className="title">Orizon Technologies Ltd</p>
                     <p className="footer-list-desp">Ruko Jalur Sutera 29A No. 53 Alam Sutera Serpong, Tangerang 15323</p>
                 </li>
-                <li className="flex-style service-li as">
+                <li className="flex-style service-li as w-50">
                     <h3 className="c-title">Contact</h3>
                     <a href="tel:+62.21.5314.1135">Phone : +62.21.5314.1135</a>
                     <a href={`mailto:community@orizon.com`}>Email : community@orizon.com</a>

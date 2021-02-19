@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
-import despImage from '../assets/img/image.png';
+import despImage from '../assets/img/undraw_web_devices_ad58.svg';
 
 const Description = (props) => {
     return (

@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
-import despImage from '../assets/img/image.png';
+import despImage from '../assets/img/undraw_Business_plan_re_0v81.svg';
 
 const Introduction = (props) => {
     return (

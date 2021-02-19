@@ -54,9 +54,8 @@ const Header = (props) => {
       }, [state, dispatch, data]);
 
       const logOut = () => {
-        console.log("Called")
-		localStorage.clear()
-		window.location.reload(); 
+        localStorage.clear()
+        window.location.reload(); 
       }
 
     return (
