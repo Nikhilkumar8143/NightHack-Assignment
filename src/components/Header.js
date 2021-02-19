@@ -12,9 +12,7 @@ import hamburgericon from '../assets/img/text_align_right.svg';
 const Header = (props) => {
 
     const handleClick = () => {
-        const menu = document.querySelector('header ul');
-        const menus = document.querySelector('header ul.social-items');
-        menus.classList.toggle('menu-toggle')
+        const menu = document.querySelector('header div.menu-items');
         menu.classList.toggle('menu-toggle');
     }
 
@@ -57,15 +55,9 @@ const Header = (props) => {
 
       const logOut = () => {
         console.log("Called")
-        dispatch({
-          type: "LOGOUT",
-          payload: {user:null,isLoggedIn:false}
-        });
+		localStorage.clear()
+		window.location.reload(); 
       }
-
-    // if (state.isLoggedIn) {
-    //   return <Redirect to="/repos"/>;
-    // }
 
     return (
         <header className="flex-style">
@@ -73,31 +65,34 @@ const Header = (props) => {
                 <img className="brand-logo" src={logo} alt="Vroriys Logo"/>
                 <h1>ORIZON</h1>
             </div>
-            <ul className="menu-items">
-                <li> <a>Services</a></li>
-                <li><a>Product</a></li>
-                <li><a>Technology</a></li>
-                <li><a>About</a></li>
-                <li><a>Client</a></li>
-                <li>
-                  	{state.user == null ?
-						<a
-						className="login-link"
-						href={`https://github.com/login/oauth/authorize?scope=user&client_id=${client_id}&redirect_uri=${redirect_uri}`}
-						onClick={() => {
-							setData({ ...data, errorMessage: "" });
-						}}
-						>
-							Login
-						</a> : <a onClick={() => logOut()}>Log Out</a>
-					}
-                </li>
-            </ul>
-            <ul className="flex-style social-items">
-                <li><img src={union}/></li>
-                <li><img src={mail}/></li>
-                <li><img src={shuffle}/></li>
-            </ul>
+            <div className="menu-items">
+				<ul className="flex-style menu-items1">
+					<li> <a>Services</a></li>
+					<li><a>Product</a></li>
+					<li><a>Technology</a></li>
+					<li><a>About</a></li>
+					<li><a>Client</a></li>
+					<li>
+						{state.user == null ?
+							<a
+							className="login-link"
+							href={`https://github.com/login/oauth/authorize?scope=user&client_id=${client_id}&redirect_uri=${redirect_uri}`}
+							onClick={() => {
+								setData({ ...data, errorMessage: "" });
+							}}
+							>
+								Login
+							</a> : <a onClick={() => logOut()}>Log Out</a>
+						}
+					</li>
+				</ul>
+				<ul className="flex-style social-items">
+					<li><img src={union}/></li>
+					<li><img src={mail}/></li>
+					<li><img src={shuffle}/></li>
+				</ul>
+            </div>
+            
             <a onClick={handleClick} className="menu">
                 <img src={hamburgericon}/>
             </a>

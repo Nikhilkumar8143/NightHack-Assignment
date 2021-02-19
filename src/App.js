@@ -7,6 +7,7 @@ import './assets/css/style.scss'
 import Header from './components/Header';
 import Footer from './components/Footer';
 import UserRepo from './components/UserRepos';
+import Login from './components/Login';
 
 
 export const AuthContext = createContext();
@@ -24,11 +25,10 @@ function App() {
     <Router>
       <Header/>
       <Switch>
-        {/* <Route path="/login" component={Login}/> */}
-        <Route exact path="/"><HomePage /></Route>
+        <Route exact path="/" component={HomePage}></Route>
         <Route path="/repos" component={UserRepo}></Route>
-        {/* <Route path="/login"><Login /></Route> */}
-        <Route path="*"><NotFoundPage /></Route>
+        <Route path="/login" component={Login}></Route>
+        <Route path="*" component={NotFoundPage}></Route>
       </Switch>
     </Router>
     <Footer/>

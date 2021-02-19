@@ -57,7 +57,7 @@ const UserRepos = (props) => {
 						})
 					}
 				</ul>
-				{!state.isLoggedIn && <a onClick={() => {return <Redirect to="/"/>}}>Go to Home</a>}
+				{!state.isLoggedIn && <a onClick={() => <Redirect to="/"/>}>Go to Home</a>}
 			</div>
         </div>
     );
