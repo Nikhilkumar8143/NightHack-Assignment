@@ -7,7 +7,7 @@ import mail from '../assets/img/mail.svg';
 import shuffle from '../assets/img/shuffle.svg';
 import { AuthContext } from "../App";
 // import { Redirect } from "react-router-dom";
-import hamburgericon from '../assets/img/text_align_right.svg';
+import hamburgericon from '../assets/img/text_align_right.svg'
 
 const Header = (props) => {
 

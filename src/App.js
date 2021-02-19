@@ -7,7 +7,7 @@ import './assets/css/style.scss'
 import Header from './components/Header';
 import Footer from './components/Footer';
 import UserRepo from './components/UserRepos';
-import Login from './components/Login';
+import Login from './components/Login'
 
 
 export const AuthContext = createContext();
