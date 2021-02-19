@@ -1,0 +1,44 @@
+.introduction-page{
+    background: #F7F7F7;
+    padding: 60px 200px;
+}
+
+.int-image{
+    width: 400px;
+    height: 100%;
+    margin: 0px $defaultSize $defaultSize 0px;
+}
+
+.int-desp{
+    color: #30444E;
+    font-size: 18px;
+}
+
+.int-desp:first-of-type{
+    margin-bottom: 35px;
+}
+
+.sub-head{
+    font-size: 32px;
+    color: #1F2E35;
+    margin-bottom: $defaultSize;
+}
+
+@media screen and (max-width: 1000px) {
+    .introduction-page{
+        padding: 40px 26px;
+    }
+
+    .introduction-page{
+        flex-direction: column;
+    }
+
+    .int-image{
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .desp-block{
+        margin-top: $defaultSize;
+    }
+}

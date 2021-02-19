@@ -1,0 +1,60 @@
+.login-c{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000000;
+    background-color:$whiteColor;
+}
+
+.wrapper {
+  margin: auto;
+  padding: 32px 0 15px;
+  width: 300px;
+  margin: 0 auto;
+    padding-top: 28px;
+    border-radius: 4px;
+    background: #ffffff;
+    position: absolute;
+    top: 100px;
+    bottom:100px;
+    left:100px;
+    right:100px;
+}
+
+.repo-t{
+  justify-content: space-between;
+  margin-bottom: $defaultSize;
+}
+
+.new-repo{
+  padding: 5px;
+  background-color: #2cbe4e;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.new-repo svg{
+  margin-right:5px;
+}
+
+.input-repo{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.repo-details{
+  padding: 10px 20px;
+}
+
+.repo-details a svg{
+  margin-right: 10px;
+}

@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 14px;
+    color: #212529;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+i{
+    cursor:pointer;
+}
+
+h1 {
+    font-size: 22px;
+    color: #000;
+    font-weight: 700;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    color: #727272;
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+button,
+button:hover,
+button:active,
+.button:focus {
+  border: 0;
+  background-color: transparent;
+  box-shadow: none;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.op0-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container{
+    // padding: 70px 100px;
+    margin-top: 100px;
+}
+
+.flex-style{
+    display: -webkit-box;  
+    display: -moz-box;     
+    display: -ms-flexbox;  
+    display: -webkit-flex; 
+    display: flex;  
+}
+
+.p-title{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: $defaultSize;
+}
+
+.desktop-pad{
+    padding: 60px 150px;
+}
+
+.brand-block{
+    align-items: center;
+}
+
+.fw-300{
+    font-weight: 300;
+}
+
+@media screen and (max-width: 1000px) {
+    .desktop-pad{
+        padding: 40px 26px;
+    }
+}

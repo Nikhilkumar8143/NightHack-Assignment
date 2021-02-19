@@ -1,0 +1,54 @@
+footer{
+    position: relative;
+}
+
+.title{
+    font-size: 18px;
+    font-weight:500;
+}
+
+.footer-list-desp{
+    font-weight: 300;
+    font-size: 18px;
+    color: #263238;
+}
+
+.technologies{
+    flex-wrap: wrap;
+}
+
+.technologies img{
+    width: 120px;
+    height: 40px;
+}
+
+.as{
+    align-items: flex-start;
+    max-width: 100%;
+}
+
+.copyright{
+    position: absolute;
+    bottom: 0px;
+    height: 64px;
+    width: 100%;
+    background-color: $primaryColor;
+}
+
+.copyright p{
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.c-title{
+    font-size: 24px;
+    color: #263238;
+}
+
+@media screen and (max-width: 1000px) {
+    .technologies img{
+        width: 80px;
+    }
+}

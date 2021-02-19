@@ -1,0 +1,43 @@
+.service-li{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 40%;
+    margin: 0px 15px;
+}
+
+.service-li > *{
+    margin-bottom: 15px;
+}
+
+.service-img{
+    width: 90px;
+    height: 90px;
+}
+
+.service-title{
+    font-weight: 500;
+    font-size: 28px;
+    color: $primaryColor;
+}
+
+.service-desp{
+    font-size: 18px;
+    color: #30444E;
+}
+
+.rm{
+    padding: 8px 16px;
+}
+
+@media screen and (max-width: 1000px) {
+    .service-ul{
+        flex-direction: column;
+    }
+
+    .service-li{
+        max-width: 100%;
+        margin-bottom: $defaultSize;
+    }
+    
+}
