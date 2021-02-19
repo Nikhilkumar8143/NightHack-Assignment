@@ -1,7 +1,10 @@
 const Joi = require("joi");
 const path = require("path");
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 25d1d29d6851afd54743874ad72c15d0ee3bec53
 const config = {
   client_id: "78c09e9ecdf9c48ec927",
   redirect_uri: "http://localhost:3000/repos",
